@@ -17,8 +17,13 @@ This project is intended to reduce the required screen space and CPU load of Ste
 ## Installation
 
 1. Install node.js from https://nodejs.org/en/download/
-2. Clone the repository and run the included batch file (Windows) or use the command line `./nativefier --name "Steam Chat" --single-instance --inject inject.css --inject inject.js "https://steamcommunity.com/chat?l=english"`
-3. Run the generated application
-4. Log into Steam inside the application (Steam Guard will require a code)
-5. Click on the settings (gear icon) in the upper left
-6. Enable Compact favorites area, Compact friends list & chat view, and set the chat font size to small
+2. Install nativefier with the command `npm install nativefier -g`
+3. Clone the repository and run the included batch file (Windows) or use the command line `./nativefier --name "Steam Chat" --single-instance --inject inject.css --inject inject.js "https://steamcommunity.com/chat?l=english"`
+4. Run the generated application
+5. Log into Steam inside the application (Steam Guard will require a code)
+6. Click on the settings (gear icon) in the upper left
+7. Enable Compact favorites area, Compact friends list & chat view, and set the chat font size to small
+
+## Updating
+
+To update to the most recent changes, you do not need to rebuild your chat application.  Simply navigate to `<chat app directory>/resources/app/inject/` and replace the files with the most recent version.  Restart the chat application to load the new files.
