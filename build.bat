@@ -1,0 +1,1 @@
+nativefier --name "Steam Chat" --single-instance --inject inject.css --inject inject.js "https://steamcommunity.com/chat?l=english"

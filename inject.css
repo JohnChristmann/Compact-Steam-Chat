@@ -1,0 +1,157 @@
+/* Global: Stop the Message Indicator Animation */
+div.chatTab div.chatTabUnreadBadge,
+div.FriendMessageCount, 
+div.ChatUnreadMessageIndicator { animation: none !important; }
+div.chatTab.HasUnreadMessage div.UnreadGlow  { display: none; animation: none !important; }
+
+/* Global: No User Avatars */
+div.avatarHolder { width: 0px !important; }
+img.avatar { display: none !important; }
+
+/* Favorites: Allow Avatars */
+div.favoriteElement div.avatarHolder { width: 26px !important; }
+div.favoriteElement img.avatar { display: block !important; }
+
+/* Friendlist: Hide Group Categories */
+/* div.friendlistListContainer > div.gameGroup:not(.OtherGamesGroup) { display: none !important; } */
+
+/* Friendlist: Hide Group Chats */
+div.FriendsListContent > div:last-child { display: none !important; }
+
+/* Friendlist: Hide Bottom/Feedback */
+div.friendListFooter { display: none !important; }
+
+/* Friendlist/Group Memberlist: Real Compact View */
+div.CompactFriendsList div.friend { height: auto !important; }
+div.CompactFriendsList div.friend div.avatarHolder { height: auto !important; }
+div.CompactFriendsList div.labelHolder { display: flex; height: auto !important; }
+div.CompactFriendsList div.friend div.richPresenceLabel { -webkit-mask: none !important; }
+div.CompactFriendsList div.friend div.richPresenceLabel:not(.gameName){ display: none !important; }
+div.CompactFriendsList div.friend:hover div.richPresenceLabel { display: none !important; }
+div.CompactFriendsList div.friend:hover div.richPresenceLabel:last-child { display: block !important; }
+div.chatRoomMembers div.ReactVirtualized__Grid__innerScrollContainer { height: auto !important; }
+div.chatRoomMembers div.ReactVirtualized__Grid__innerScrollContainer > div { height: auto !important; position: unset !important; }
+
+/*  Group Chat: Square Avatars */
+div.ChatRoomGroupAvatar { border-radius: 0 !important; }
+
+/* Group Chat: Hide Rank in Chat */
+div.rankIcon { display: none !important; }
+div.chatRoomMembers .rankIcon { display: block !important; top: 6px !important; left: 2px !important; }
+div.chatRoomMembers .rankIcon img { height: 8px !important; width: 8px !important; }
+
+/* Group Chat: Fix Message Padding */
+div.MultiUserChat div.msg,
+div.MultiUserChat div.msg:not(.ChatMsgSlashEmote) { padding-left: 10px !important; }
+
+/* Chat: Hide Link Preview Image */
+div.ChatMessageBlock a.OpenGraphImgContainer { display: none !important; }
+
+/* Chat: Link Preview - No Link Animation */
+div.ChatMessageBlock span.OpenGraphMessageURL_short,
+div.ChatMessageBlock input.OpenGraphMessageURL_full { transform: none !important; transition: none !important; }
+div.ChatMessageBlock div.OpenGraphFooter:hover span.OpenGraphMessageURL_short { display: 0 !important; transform: none !important; }
+div.ChatMessageBlock div.OpenGraphFooter:hover input.OpenGraphMessageURL_full { opacity: 1 !important; transform: none !important; }
+
+/* Compact chat input area */
+div.smallChatFont.compactView textarea.chatTextarea { height: 24px; padding: 3px; }
+div.chatWindow div.chatEntry.compactView { padding: 4px 8px !important; height: 24px !important; }
+div.chatEntry.compactView { height: 24px; }
+div.chatEntry.compactView button.VoiceToggle { height: 20px; width: 20px; min-width: 20px; }
+div.chatEntry.compactView div.VoiceToggleIconCtn { left: 3px; top: 5px; height: 18px; width: 18px; }
+div.chatEntry.compactView div.VoiceToggleIconCtn > svg { width: 75% !important; height: 75% !important; }
+div.ChatMessageEntryVoice { min-width: 20px; margin-left: 12px; margin-right: 12px; }
+div.chatEntry.compactView button.chatSubmitButton { height: 20px; width: 20px; min-width: 20px; }
+div.chatEntry.compactView button.chatSubmitButton > svg { margin-top: 2px !important; width: 12px !important; height: 12px !important; }
+div.chatEntry.compactView button.chatSubmitButton svg.SVGIcon_Paperclip { width: 16px !important; height: 16px !important; margin-bottom: 8px !important; }
+
+/* Compact group chat header */
+div.compactView div.chatRoomGroupHeader { padding: 2px 4px 2px 8px !important; }
+div.compactView div.chatRoomGroupHeader div.ChatRoomGroupAvatar { display: none !important; }
+div.chatRoomGroupHeaderNameandTag { flex-direction: row; justify-content: left; }
+div.chatRoomGroupHeaderName { font-size: 20px !important; padding-top: 0px; }
+div.chatRoomGroupHeaderTagline { font-size: 13px; padding-top: 4px; }
+div.chatRoomGroupControls { flex-direction: row; }
+div.chatRoomOptions { margin-right: 4px !important; }
+div.chatRoomButton { margin: 0px 2px !important; height: 24px !important; width: 24px }
+div.statMemberStat { margin-right: 4px !important; }
+
+/* Compact group chat */
+div.chatHistory { padding-bottom: 8px; }
+div.smallChatFont div.ChatRoomSpeaker div.speaker div.speakerStatus { height: 11px; margin-right: 4px; }
+div.smallChatFont div.speakerTimeStamp { line-height: 12px; font-size: 11px; }
+div.smallChatFont div.ChatRoomSpeaker div.speaker { margin-top: 0px; padding: 1.5px 0; /*flex-direction: row-reverse; */}
+div.smallChatFont div.ChatRoomSpeaker div.speaker div.speakerName { margin-top: 2px; }
+div.smallChatFont div.ChatRoomSpeaker { margin-top: 0px; }
+div.chatImageContainer, div.chatVideoContainer { margin-bottom: 0px; }
+div.smallChatFont div.msg { padding: 0px; line-height: 15px; }
+div.smallChatFont div.msg.timeDivision { margin-top: 0px; margin-bottom: 0px; height: 14px; }
+span.mention { line-height: 14px !important; }
+div.ChatMessageBlockDelete { top: 0px; left: -16px; }
+
+/* Compact group chat user list */
+div.friendGroup div.groupName { font-size: 12px !important; line-height: 16px; margin-top: 6px; }
+div.CompactFriendsList div.friend, div.CompactFriendsList div.friendGroup div.friend { padding: 2px 0px 2px 6px !important; }
+div.CompactFriendsList div.friend div.playerName { font-size: 11px; margin-bottom: 0px; }
+div.CompactFriendsList div.friend div.labelHolder { margin-top: 0px !important; }
+div.CompactFriendsList div.friend div.richPresenceLabel { margin-top: 1px !important; }
+div.CompactFriendsList div.friend div.avatarHolder div.avatarStatus { display: none; }
+div.ContextMenuButton { height: 12px; }
+div.MemberListOptionsContainer { height: 24px; }
+div.MemberListOption { height: 16px; }
+div.MemberListOptionsContainer form.socialInputContainer { margin: 4px; }
+div.MemberListOption > svg { padding: 0px !important; }
+div.MemberListColumn div.friend div.chatMemberFriendIcon > svg { bottom: 0px !important; }
+/* Known issue: friend icons cover up moderator icons */
+
+/* Compact private chat */
+div.ChatMessageInvite { margin-bottom: 0px; padding: 8px; }
+div.msg.gameInviteMsg { margin-bottom: 4px !important; }
+div.inviteAnotherFriendButton { width: 16px; height: 16px; }
+
+/* Compact chat objects */
+div.ChatMessageTweet { margin-bottom: 4px; padding: 8px; }
+div.ChatMessageTweet_Body > img { margin-top: 0px; margin-bottom: 0px; }
+div.ChatMsgSlashPre { margin-bottom: 0px; padding: 8px; }
+div.msgText > pre { margin-bottom: 0px !important; }
+div.ChatMsgSlashCode { margin-bottom: 0px; padding: 8px; }
+div.ChatMsgSlashEmote { margin-top: 0px; }
+div.ChatMsgSlashEmote div.speaker { line-height: 15px; }
+div.ChatMsgSlashEmote div.speakerHoverArea { line-height: 15px; }
+div.ChatMsgSlashEmote div.speaker div.speakerStatus { height: 15px; }
+div.BBCodeYouTubeComponent { margin: 0px; }
+div.msg div.ChatMessageOpenGraph { margin: 4px 0px; }
+
+/* Compact friends list */
+div.friendlistListContainer { margin-top: 0px; border-top: none; }
+div.CompactFriendsList div.friendsContainer { padding-bottom: 0px; }
+div.CompactFriendsList div.friend.ingame div.labelHolder { padding-top: 0px; padding-bottom: 0px; }
+div.CompactFriendsList div.friend.ingame div.avatarHolder { height: 13px !important; }
+div.CompactFriendsList div.friendGroup.gameGroup:not (div.OtherGamesGroup).friend { padding: 2px 0px 2px 6px !important; }
+div.unreadFriend div.FriendMessageCount { font-size: 10px; line-height: 14px; height: 16px; padding: 0px 4px; top: 0px; }
+div.CompactFriendsList div.unreadFriend div.FriendMessageCount { margin-top: 3px; }
+div.SnoozeContainer { margin-top: 0px; }
+div.groupHeaderContainer { padding-bottom: 4px; }
+div.gameGroupContainer { height: 16px !important; width: 10px !important; }
+div.friendGroup.gameGroup { border-top: none; }
+div.CompactFriendsList div.groupName div.gameGroupContainer img.groupIcon { display: none !important; }
+div.FriendsListContent div.friendlistListContainer div.friendGroup.onlineFriends,
+div.FriendsListContent div.friendlistListContainer div.friendGroup.offlineFriends { border-top: none !important; margin-top: 0px; }
+div.ExpandPlusMinus { margin-top: 0px !important; }
+div.socialListTab { margin-top: 0px; }
+div.SteamPlayerGroupLines { display: none !important; }
+div.SteamPlayerGroupFooter { display: none !important; }
+
+/* Compact chat tabs */
+div.HorizontalMiniSlider { height: 26px; }
+div.ChatTabs.compactView div.chatTabList div.chatTab { height: 26px; width: 120px; }
+div.ChatTabs.compactView div.ChatTabContent.ChatRoom.ChatRoomGroupAvatar { width: 16px; height: 16px; }
+div.chatTab div.ChatTabContent { padding-top: 6px !important; font-size: 12px; }
+div.ChatTabs.compactView div.chatTabGroupName { margin-top: -2px; }
+div.ChatTabContent div.friend div.statusAndName { margin-top: 1px; }
+div.ChatTabContent div.labelHolder div.richPresenceContainer { display: none; }
+div.chatTab div.chatTabClose { padding: 0px 2px; }
+div.chatTab div.chatTabUnreadBadge { line-height: 10px; height: 10px; font-size: 10px; }
+div.HorizontalMiniSliderArrow { width: 32px; padding-top: 2px; }
+svg#arrowBase { width: 12px !important; height: 12px !important; padding: 4px; }
+div.BBCodeResizableComponent.Minimized { min-height: 14px; }
