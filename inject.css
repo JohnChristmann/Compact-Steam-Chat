@@ -75,6 +75,11 @@ div.chatRoomGroupControls { flex-direction: row; }
 div.chatRoomOptions { margin-right: 4px !important; }
 div.chatRoomButton { margin: 0px 2px !important; height: 24px !important; width: 24px }
 div.statMemberStat { margin-right: 4px !important; }
+div.chatRoomGroupHeader div.broadcastInfoContainer { margin-right: 0px; padding: 4px; }
+div.chatRoomGroupHeader div.broadcastInfoContainer div.broadcastDetails { padding-right: 0px; display: flex; flex-direction: row; }
+div.chatRoomGroupHeader div.broadcastInfoContainer div.broadcastDetails div.nowWatching {}
+div.chatRoomGroupHeader div.broadcastInfoContainer div.broadcastDetails div.gameTitle { font-size: 12px; text-align: left; padding-left: 4px; max-width: 128px; max-height: 16px; text-overflow: ellipsis; overflow: hidden; }
+div.chatRoomGroupHeader div.broadcastInfoContainer div.thumbnail { display: none !important; }
 
 /* Compact group chat */
 div.chatHistory { padding-bottom: 8px; }
@@ -101,8 +106,7 @@ div.MemberListOptionsContainer { height: 24px; }
 div.MemberListOption { height: 16px; }
 div.MemberListOptionsContainer form.socialInputContainer { margin: 4px; }
 div.MemberListOption > svg { padding: 0px !important; }
-div.MemberListColumn div.friend div.chatMemberFriendIcon > svg { bottom: 0px !important; }
-/* Known issue: friend icons cover up moderator icons */
+div.MemberListColumn div.friend div.chatMemberFriendIcon { display: none !important; }
 
 /* Compact private chat */
 div.ChatMessageInvite { margin-bottom: 0px; padding: 8px; }
