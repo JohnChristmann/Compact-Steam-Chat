@@ -56,7 +56,7 @@ div.ChatMessageBlock div.OpenGraphFooter:hover input.OpenGraphMessageURL_full { 
 /* Compact chat input area */
 div.smallChatFont.compactView textarea.chatTextarea { height: 24px; padding: 3px; }
 div.chatWindow div.chatEntry.compactView { padding: 4px 8px !important; height: 24px !important; }
-div.chatEntry.compactView { height: 24px; }
+div.chatEntry.compactView > * { height: 24px; }
 div.chatEntry.compactView button.VoiceToggle { height: 20px; width: 20px; min-width: 20px; }
 div.chatEntry.compactView div.VoiceToggleIconCtn { left: 3px; top: 5px; height: 18px; width: 18px; }
 div.chatEntry.compactView div.VoiceToggleIconCtn > svg { width: 75% !important; height: 75% !important; }
@@ -77,8 +77,9 @@ div.chatRoomButton { margin: 0px 2px !important; height: 24px !important; width:
 div.statMemberStat { margin-right: 4px !important; }
 div.chatRoomGroupHeader div.broadcastInfoContainer { margin-right: 0px; padding: 4px; }
 div.chatRoomGroupHeader div.broadcastInfoContainer div.broadcastDetails { padding-right: 0px; display: flex; flex-direction: row; }
-div.chatRoomGroupHeader div.broadcastInfoContainer div.broadcastDetails div.nowWatching {}
-div.chatRoomGroupHeader div.broadcastInfoContainer div.broadcastDetails div.gameTitle { font-size: 12px; text-align: left; padding-left: 4px; max-width: 128px; max-height: 16px; text-overflow: ellipsis; overflow: hidden; }
+div.chatRoomGroupHeader div.broadcastInfoContainer div.broadcastDetails div.nowWatching { max-height: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 120px; }
+div.chatRoomGroupHeader div.broadcastInfoContainer div.broadcastDetails div.gameTitle { font-size: 12px; text-align: left; padding-left: 4px; max-width: 128px; max-height: 16px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+div.chatRoomGroupHeader div.broadcastInfoContainer div.broadcastDetails div.broadcastTitle { font-size: 12px; max-height: 16px; }
 div.chatRoomGroupHeader div.broadcastInfoContainer div.thumbnail { display: none !important; }
 
 /* Compact group chat */
@@ -117,14 +118,16 @@ div.inviteAnotherFriendButton { width: 16px; height: 16px; }
 div.ChatMessageTweet { margin-bottom: 4px; padding: 8px; }
 div.ChatMessageTweet_Body > img { margin-top: 0px; margin-bottom: 0px; }
 div.ChatMsgSlashPre { margin-bottom: 0px; padding: 8px; }
-div.msgText > pre { margin-bottom: 0px !important; }
+div.msgText > pre { margin-bottom: 0px !important; padding: 8px !important; }
 div.ChatMsgSlashCode { margin-bottom: 0px; padding: 8px; }
-div.ChatMsgSlashEmote { margin-top: 0px; }
-div.ChatMsgSlashEmote div.speaker { line-height: 15px; }
+div.ChatMsgSlashEmote.msg { margin-top: 0px !important; }
+div.msg.ChatMsgSlashEmote div.speaker { line-height: 15px !important; }
 div.ChatMsgSlashEmote div.speakerHoverArea { line-height: 15px; }
 div.ChatMsgSlashEmote div.speaker div.speakerStatus { height: 15px; }
 div.BBCodeYouTubeComponent { margin: 0px; }
 div.msg div.ChatMessageOpenGraph { margin: 4px 0px; }
+img.emoticon { width: 15px !important; height: 15px !important; vertical-align: bottom !important; }
+div.NonInlinedEmbed a div.NonInlinedEmbedLogo { height: 15px; margin-top: 0px; margin-bottom: -4px; }
 
 /* Compact friends list */
 div.friendlistListContainer { margin-top: 0px; border-top: none; }
