@@ -124,12 +124,14 @@ div.ChatMsgSlashEmote.msg { margin-top: 0px !important; }
 div.msg.ChatMsgSlashEmote div.speaker { line-height: 15px !important; }
 div.ChatMsgSlashEmote div.speakerHoverArea { line-height: 15px; }
 div.ChatMsgSlashEmote div.speaker div.speakerStatus { height: 15px; }
+div.msgText.quoteMsgText { padding: 8px; margin: 0px; }
 div.BBCodeYouTubeComponent { margin: 0px; }
 div.msg div.ChatMessageOpenGraph { margin: 4px 0px; }
 img.emoticon { vertical-align: bottom !important; }
 div.NonInlinedEmbed a div.NonInlinedEmbedLogo { height: 15px; margin-top: 0px; margin-bottom: -4px; }
-div.NonInlinedEmbed svg.SVGIcon_Hyperlink { width: 15px !important; height: 15px !important; margin-top: 0px !important; margin-bottom: -4px !important; }
-div.NonInlinedEmbed svg.SVGIcon_Hyperlink { height: 11px !important; }
+div.NonInlinedEmbed a div.NonInlinedEmbedLogo.NonInlinedEmbedLogo_Twitter { background-position-y: -2px; width: 15px; }
+div.NonInlinedEmbed svg.SVGIcon_Hyperlink, div.NonInlinedEmbed svg.SVGIcon_Image { width: 15px !important; height: 15px !important; margin-top: 0px !important; margin-bottom: -4px !important; }
+div.NonInlinedEmbed svg.SVGIcon_YouTube { height: 11px !important; }
 
 /* Compact friends list */
 div.compactView div.titleBarContainer div.currentUserContainer div.richPresenceLabel { line-height: 14px; padding-top: 2px; padding-bottom: 2px; margin-top: 0px; }
