@@ -168,5 +168,6 @@ div.chatTab div.chatTabUnreadBadge { line-height: 10px; height: 10px; font-size:
 div.HorizontalMiniSliderArrow { width: 32px; padding-top: 2px; }
 svg#arrowBase { width: 12px !important; height: 12px !important; padding: 4px; }
 div.BBCodeResizableComponent.Minimized { min-height: 14px; }
-div.chatTabSelector { width: 26px; height: 26px; border: none; }
-div.chatTabSelector > svg { margin-left: 7px !important; margin-top: 7px !important; }
+div.compactView div.chatTabSelector { width: 26px; height: 26px; border: none; margin-top: 0px; }
+div.compactView div.chatTabSelector > svg { margin-left: 7px !important; margin-top: 7px !important; }
+div.compactView div.chatTabSelector.UnreadMessages div.ChatUnreadMessageIndicator { height: 26px; width: 26px; padding: 0px; }
