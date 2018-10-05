@@ -117,14 +117,16 @@ div.inviteAnotherFriendButton { width: 16px; height: 16px; }
 /* Compact chat objects */
 div.ChatMessageTweet { margin-bottom: 4px; padding: 8px; }
 div.ChatMessageTweet_Body > img { margin-top: 0px; margin-bottom: 0px; }
-div.ChatMsgSlashPre { margin-bottom: 0px; padding: 8px; }
+div.ChatMsgSlashPre { padding: 0px; }
+div.ChatMsgSlashPre > pre { margin-bottom: 0px; padding: 8px; }
 div.msgText > pre { margin-bottom: 0px !important; padding: 8px !important; }
-div.ChatMsgSlashCode { margin-bottom: 0px; padding: 8px; }
+div.ChatMsgSlashCode { margin: 0px; padding: 0px; }
+div.ChatMsgSlashCode > pre { margin-bottom: 0px; padding: 8px; }
 div.ChatMsgSlashEmote.msg { margin-top: 0px !important; }
 div.msg.ChatMsgSlashEmote div.speaker { line-height: 15px !important; }
 div.ChatMsgSlashEmote div.speakerHoverArea { line-height: 15px; }
 div.ChatMsgSlashEmote div.speaker div.speakerStatus { height: 15px; }
-div.msgText.quoteMsgText { padding: 8px; margin: 0px; }
+div.msgText div.quoteMsgText { padding: 8px; margin: 0px; }
 div.BBCodeYouTubeComponent { margin: 0px; }
 div.msg div.ChatMessageOpenGraph { margin: 4px 0px; }
 img.emoticon { vertical-align: bottom !important; }
@@ -156,8 +158,9 @@ div.SteamPlayerGroupLines { display: none !important; }
 div.SteamPlayerGroupFooter { display: none !important; }
 
 /* Compact chat tabs */
-div.HorizontalMiniSlider { height: 26px; }
-div.ChatTabs.compactView div.chatTabList div.chatTab { height: 26px; width: 120px; }
+div.HorizontalMiniSlider { height: 26px !important; }
+div.ChatTabs.HasTabs { padding-top: 2px !important; }
+div.ChatTabs.compactView div.chatTabList div.chatTab { height: 26px; width: 120px; margin-right: 0px; }
 div.ChatTabs.compactView div.ChatTabContent.ChatRoom.ChatRoomGroupAvatar { width: 16px; height: 16px; }
 div.chatTab div.ChatTabContent { padding-top: 6px !important; font-size: 12px; }
 div.ChatTabs.compactView div.chatTabGroupName { margin-top: -2px; }
@@ -165,6 +168,8 @@ div.ChatTabContent div.friend div.statusAndName { margin-top: 1px; }
 div.ChatTabContent div.labelHolder div.richPresenceContainer { display: none; }
 div.chatTab div.chatTabClose { padding: 0px 2px; }
 div.chatTab div.chatTabUnreadBadge { line-height: 10px; height: 10px; font-size: 10px; }
+div.chatTabDraggableSpace { width: 24px; }
+div.compactView div.chatTabDraggableSpace.ChromeClearance { display: none; }
 div.HorizontalMiniSliderArrow { width: 32px; padding-top: 2px; }
 svg#arrowBase { width: 12px !important; height: 12px !important; padding: 4px; }
 div.BBCodeResizableComponent.Minimized { min-height: 14px; }
