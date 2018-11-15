@@ -98,10 +98,10 @@ div.ChatMessageBlockDelete { top: 0px; left: -16px; }
 
 /* Compact group chat user list */
 div.friendGroup div.groupName { font-size: 12px !important; line-height: 16px; margin-top: 6px; }
-div.CompactFriendsList div.friend, div.CompactFriendsList div.friendGroup div.friend { padding: 2px 0px 2px 6px !important; }
-div.CompactFriendsList div.friend div.playerName { font-size: 11px; margin-bottom: 0px; }
+div.CompactFriendsList div.friend, div.CompactFriendsList div.friendGroup div.friend { padding: 2px 0px 0px 6px !important; }
+div.CompactFriendsList div.friend div.playerName { font-size: 11px; margin: 0px !important; }
 div.CompactFriendsList div.friend div.labelHolder { margin-top: 0px !important; }
-div.CompactFriendsList div.friend div.richPresenceLabel { margin-top: 1px !important; }
+div.CompactFriendsList div.friend div.richPresenceLabel { margin-top: 1px !important; font-size: 10px !important; }
 div.CompactFriendsList div.friend div.avatarHolder div.avatarStatus { display: none; }
 div.ContextMenuButton { height: 12px; }
 div.MemberListOptionsContainer { height: 24px; }
@@ -147,11 +147,10 @@ div.friendlistListContainer { margin-top: 0px; border-top: none; }
 div.CompactFriendsList div.friendsContainer { padding-bottom: 0px; }
 div.CompactFriendsList div.friend.ingame div.labelHolder { padding-top: 0px; padding-bottom: 0px; }
 div.CompactFriendsList div.friend.ingame div.avatarHolder { height: 13px !important; }
-div.CompactFriendsList div.friendGroup.gameGroup:not (div.OtherGamesGroup).friend { padding: 2px 0px 2px 6px !important; }
+div.CompactFriendsList div.friendGroup.gameGroup:not (div.OtherGamesGroup).friend { padding: 2px 0px 0px 6px !important; }
 div.unreadFriend div.FriendMessageCount { font-size: 10px; line-height: 14px; height: 16px; padding: 0px 4px; top: 0px; }
 div.CompactFriendsList div.unreadFriend div.FriendMessageCount { margin-top: 3px; }
-div.SnoozeContainer { margin-top: 0px; }
-div.groupHeaderContainer { padding-bottom: 4px; }
+div.SnoozeContainer { margin-top: 0px; margin-left: -2px; margin-right: 4px; }
 div.gameGroupContainer { height: 16px !important; width: 10px !important; }
 div.friendGroup.gameGroup { border-top: none; }
 div.CompactFriendsList div.groupName div.gameGroupContainer img.groupIcon { display: none !important; }
