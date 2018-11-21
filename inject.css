@@ -99,11 +99,11 @@ div.ChatMessageBlockDelete { top: 0px; left: -16px; }
 /* Compact group chat user list */
 div.friendGroup div.groupName { font-size: 12px !important; line-height: 16px; margin-top: 6px; }
 div.CompactFriendsList div.friend, div.CompactFriendsList div.friendGroup div.friend { padding: 2px 0px 0px 6px !important; }
-div.CompactFriendsList div.friend div.playerName { font-size: 11px; margin: 0px !important; }
+div.CompactFriendsList div.friend div.playerName { font-size: 11px; margin: 0px !important; -webkit-mask: unset !important; padding-right: 0px; }
 div.CompactFriendsList div.friend div.labelHolder { margin-top: 0px !important; }
 div.CompactFriendsList div.friend div.richPresenceLabel { margin-top: 1px !important; font-size: 10px !important; }
 div.CompactFriendsList div.friend div.avatarHolder div.avatarStatus { display: none; }
-div.ContextMenuButton { height: 12px; }
+div.ContextMenuButton { height: 12px; width: 14px; }
 div.MemberListOptionsContainer { height: 24px; }
 div.MemberListOption { height: 16px; }
 div.MemberListOptionsContainer form.socialInputContainer { margin: 4px; }
@@ -140,6 +140,7 @@ div.msg.ChatMessageInvite div.invitedTimeLabel { display: none; }
 div.gameInviteMsg div.productName { font-size: 12px; line-height: 12px; }
 button.DialogButton.GreenPlay { min-width: 84px; padding: 0px; }
 div.EmojiOnly { line-height: 32px !important; }
+div.timeDivision div.preHorizDivider { width: 10%; }
 
 /* Compact friends list */
 div.compactView div.titleBarContainer div.currentUserContainer div.richPresenceLabel { line-height: 14px; padding-top: 2px; padding-bottom: 2px; margin-top: 0px; }
@@ -150,7 +151,7 @@ div.CompactFriendsList div.friend.ingame div.avatarHolder { height: 13px !import
 div.CompactFriendsList div.friendGroup.gameGroup:not (div.OtherGamesGroup).friend { padding: 2px 0px 0px 6px !important; }
 div.unreadFriend div.FriendMessageCount { font-size: 10px; line-height: 14px; height: 16px; padding: 0px 4px; top: 0px; }
 div.CompactFriendsList div.unreadFriend div.FriendMessageCount { margin-top: 3px; }
-div.SnoozeContainer { margin-top: 0px; margin-left: -2px; margin-right: 4px; }
+div.SnoozeContainer { margin-top: 0px; margin-left: 2px; margin-right: 0px; }
 div.gameGroupContainer { height: 16px !important; width: 10px !important; }
 div.friendGroup.gameGroup { border-top: none; }
 div.CompactFriendsList div.groupName div.gameGroupContainer img.groupIcon { display: none !important; }
@@ -160,6 +161,7 @@ div.ExpandPlusMinus { margin-top: 0px !important; }
 div.socialListTab { margin-top: 0px; }
 div.SteamPlayerGroupLines { display: none !important; }
 div.SteamPlayerGroupFooter { display: none !important; }
+div.friend div.labelHolder div.statusAndName span.playerNickname { font-size: 11px; }
 
 /* Compact chat tabs */
 div.HorizontalMiniSlider { height: 26px !important; }
@@ -180,3 +182,7 @@ div.BBCodeResizableComponent.Minimized { min-height: 14px; }
 div.compactView div.chatTabSelector { width: 26px; height: 26px; border: none; margin-top: 0px; }
 div.compactView div.chatTabSelector > svg { margin-left: 7px !important; margin-top: 7px !important; }
 div.compactView div.chatTabSelector.UnreadMessages div.ChatUnreadMessageIndicator { height: 26px; width: 26px; padding: 0px; }
+div.compactView div.chatTabOpenFriendsList { height: 26px; box-shadow: inset 0px 0px 3px black; }
+
+/* Remove Steam header */
+div[class^="main_SteamPageHeader"] { display: none !important; }
