@@ -5,7 +5,7 @@ div.ChatUnreadMessageIndicator { animation: none !important; }
 div.chatTab.HasUnreadMessage div.UnreadGlow  { display: none; animation: none !important; }
 
 /* Global: No User Avatars */
-div.avatarHolder { width: 0px !important; }
+div.avatarHolder { width: 0px !important; height: 0px !important; }
 img.avatar { display: none !important; }
 
 /* Favorites: Allow Avatars */
@@ -59,12 +59,12 @@ div.chatWindow div.chatEntry.compactView { padding: 4px 8px !important; height: 
 div.chatEntry.compactView > * { height: 24px !important; }
 div.chatEntry.compactView > form > textarea { height: 16px !important; font-size: 11px !important; }
 div.chatEntry.compactView button.VoiceToggle { height: 20px; width: 20px; min-width: 20px; }
-div.chatEntry.compactView div.VoiceToggleIconCtn { left: 3px; top: 5px; height: 18px; width: 18px; }
+div.chatEntry.compactView div.VoiceToggleIconCtn { left: 3px; top: 4px; height: 18px; width: 18px; }
 div.chatEntry.compactView div.VoiceToggleIconCtn > svg { width: 75% !important; height: 75% !important; }
 div.ChatMessageEntryVoice { min-width: 20px; margin-left: 12px; margin-right: 12px; }
 div.chatEntry.compactView button.chatSubmitButton { height: 20px; width: 20px; min-width: 20px; }
 div.chatEntry.compactView button.chatSubmitButton > svg { margin-top: 2px !important; width: 12px !important; height: 12px !important; }
-div.chatEntry.compactView button.chatSubmitButton svg.SVGIcon_Paperclip { width: 16px !important; height: 16px !important; margin-bottom: 8px !important; }
+div.chatEntry.compactView button.chatSubmitButton svg.SVGIcon_Paperclip { width: 16px !important; height: 16px !important; margin-bottom: 14px !important; margin-top: 0px !important; }
 
 /* Compact group chat header */
 div.compactView div.chatRoomGroupHeader { padding: 2px 4px 2px 8px !important; }
@@ -112,6 +112,9 @@ div.MemberListColumn div.friend div.chatMemberFriendIcon { display: none !import
 
 /* Compact private chat */
 div.ChatMessageInvite { margin-bottom: 0px; padding: 8px; }
+div.leftInviteContainer { padding: 0px !important; }
+div.rightInviteContainer { padding: 0px !important; margin: 0px !important; }
+div.inviteURLContainer { margin: 0px !important; }
 div.msg.gameInviteMsg { margin-bottom: 4px !important; }
 div.inviteAnotherFriendButton { width: 16px; height: 16px; }
 
