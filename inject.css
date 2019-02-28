@@ -148,7 +148,10 @@ div.msg.ChatMessageInvite div.invitedTimeLabel { display: none; }
 div.gameInviteMsg div.productName { font-size: 12px; line-height: 12px; }
 button.DialogButton.GreenPlay { min-width: 84px; padding: 0px; }
 div.EmojiOnly { line-height: 32px !important; }
+div.EmoticonOnly { line-height: 32px !important; }
 div.timeDivision div.preHorizDivider { width: 10%; }
+div.ChatMessageErrorSending { margin: 0px !important; }
+div.ChatMessageErrorSending div.msgText { padding: 0px !important; }
 
 /* Compact friends list */
 div.compactView div.titleBarContainer div.currentUserContainer div.richPresenceLabel { line-height: 14px; padding-top: 2px; padding-bottom: 2px; margin-top: 0px; }
