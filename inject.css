@@ -64,9 +64,10 @@ div.chatEntry.compactView button.VoiceToggle { height: 20px; width: 20px; min-wi
 div.chatEntry.compactView div.VoiceToggleIconCtn { left: 3px; top: 4px; height: 18px; width: 18px; }
 div.chatEntry.compactView div.VoiceToggleIconCtn > svg { width: 75% !important; height: 75% !important; }
 div.ChatMessageEntryVoice { min-width: 20px; margin-left: 12px; margin-right: 12px; }
-div.chatEntry.compactView button.chatSubmitButton { height: 20px; width: 20px; min-width: 20px; }
-div.chatEntry.compactView button.chatSubmitButton > svg { margin-top: 2px !important; width: 12px !important; height: 12px !important; }
-div.chatEntry.compactView button.chatSubmitButton svg.SVGIcon_Paperclip { width: 16px !important; height: 16px !important; margin-bottom: 14px !important; margin-top: 0px !important; }
+div.chatEntry.compactView button[class^="chatentry_chatSubmitButton"] { height: 20px; width: 20px; min-width: 20px; min-height: 20px; }
+div.chatEntry.compactView button[class^="chatentry_chatSubmitButton"] > svg { margin-top: 2px !important; width: 12px !important; height: 12px !important; }
+div.chatEntry.compactView button[class^="chatentry_chatSubmitButton"] svg.SVGIcon_Paperclip { width: 16px !important; height: 16px !important; margin-bottom: 14px !important; margin-top: 0px !important; }
+div.chatEntry.compactView div[class^="chatentry_chatEntryActionsContainer"] { margin: 0px !important; }
 
 /* Compact group chat header */
 div.compactView div.chatRoomGroupHeader { padding: 2px 4px 2px 8px !important; }
@@ -177,17 +178,17 @@ div.friend div.labelHolder div.statusAndName span.playerNickname { font-size: 11
 /* Compact chat tabs */
 div.HorizontalMiniSlider { height: 29px !important; }
 div.ChatTabs.HasTabs { padding-top: 2px !important; }
-div.ChatTabs.compactView div.chatTabList div.chatTab { height: 30px; width: 120px; margin-right: 0px; }
-div.ChatTabs.compactView div.ChatTabContent.ChatRoom.ChatRoomGroupAvatar { width: 16px; height: 16px; }
+div.ChatTabs.compactView div.chatTabList div[class^="chattabs_ChatTab_"] { height: 30px; width: 120px; margin-right: 0px; padding: 6px; }
+div.ChatTabs.compactView div[class^="chattabs_ChatTabContent_ChatRoom"].ChatRoomGroupAvatar { width: 16px; height: 16px; }
 div.ChatTabs.compactView div.labelHolder { margin-top: -3px; }
-div.chatTab div.ChatTabContent { padding-top: 6px !important; font-size: 12px; }
-div.ChatTabs.compactView div.chatTabGroupName { margin-top: -2px; }
-div.ChatTabContent div.friend div.statusAndName { margin-top: 1px; }
-div.chatTab div.chatTabClose { padding: 0px 2px; }
-div.chatTab div.chatTabUnreadBadge { line-height: 10px; height: 10px; font-size: 10px; }
+div.chatTab div[class^="chattabs_ChatTabContent_ChatRoom"] { padding-top: 6px !important; font-size: 12px; }
+div.ChatTabs.compactView div[class^="chattabs_ChatTabContent_ChatRoomName"] { margin-top: -2px; font-size: 11px; }
+/*div.chatTab div[class^="chattabs_ChatTabContent_Friend"] { padding-top: 6px !important; font-size: 12px; }*/
+div.ChatTabContent div.friend div[class^="personanameandstatus_statusAndName"] { margin-top: 1px; }
+div.chatTab div[class^="chattabs_CloseButton"] { padding: 0px 2px; }
+div.chatTab div[class^="chattabs_UnreadGlow"] { line-height: 10px; height: 10px; font-size: 10px; }
 div.chatTabDraggableSpace { width: 24px; }
 div.compactView div.chatTabDraggableSpace.ChromeClearance { display: none; }
-div.HorizontalMiniSliderArrow { width: 32px; padding-top: 2px; }
 svg#arrowBase { width: 12px !important; height: 12px !important; padding: 4px; }
 div.BBCodeResizableComponent.Minimized { min-height: 14px; }
 div.compactView div.chatTabSelector { width: 28px; height: 29px; border: none; margin-top: 0px; }
