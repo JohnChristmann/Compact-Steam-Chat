@@ -65,9 +65,10 @@ div.chatEntry.compactView div.VoiceToggleIconCtn { left: 3px; top: 4px; height: 
 div.chatEntry.compactView div.VoiceToggleIconCtn > svg { width: 75% !important; height: 75% !important; }
 div.ChatMessageEntryVoice { min-width: 20px; margin-left: 12px; margin-right: 12px; }
 div.chatEntry.compactView button[class^="chatentry_chatSubmitButton"] { height: 20px; width: 20px; min-width: 20px; min-height: 20px; }
-div.chatEntry.compactView button[class^="chatentry_chatSubmitButton"] > svg { margin-top: 2px !important; width: 12px !important; height: 12px !important; }
+div.chatEntry.compactView button[class^="chatentry_chatSubmitButton"] svg.SVGIcon_Emoticon { margin-top: 2px !important; width: 12px !important; height: 12px !important; }
 div.chatEntry.compactView button[class^="chatentry_chatSubmitButton"] svg.SVGIcon_Paperclip { width: 16px !important; height: 16px !important; margin-bottom: 14px !important; margin-top: 0px !important; }
 div.chatEntry.compactView div[class^="chatentry_chatEntryActionsContainer"] { margin: 0px !important; }
+svg[class^="shared_svg_library_EmoticonBow"] { top: -6px !important; }
 
 /* Compact group chat header */
 div.compactView div.chatRoomGroupHeader { padding: 2px 4px 2px 8px !important; }
@@ -115,6 +116,7 @@ div.MemberListColumn div.friend div.chatMemberFriendIcon { display: none !import
 div[class^="personanameandstatus_playerName"] { font-size: 11px !important; }
 div[class^="personanameandstatus_gameName"] { font-size: 10px !important; }
 div[class^="personanameandstatus_richPresenceLabel"] { display: none !important; }
+span[class^="personanameandstatus_playerNickname"] { font-size: 11px !important; }
 
 /* Compact private chat */
 div.ChatMessageInvite { margin-bottom: 0px; padding: 8px; }
@@ -153,9 +155,9 @@ div.EmoticonOnly { line-height: 32px !important; }
 div.timeDivision div.preHorizDivider { width: 10%; }
 div.ChatMessageErrorSending { margin: 0px !important; }
 div.ChatMessageErrorSending div.msgText { padding: 0px !important; }
-canvas { display: none !important; }
-canvas+img { display: none !important; }
-div[style*="150px;"] { height: unset !important; }
+canvas { height: 32px !important; }
+canvas+img { height: 32px !important; }
+div[style*="150px;"] { height: 32px !important; }
 
 /* Compact friends list */
 div.compactView div.titleBarContainer div.currentUserContainer div.richPresenceLabel { line-height: 14px; padding-top: 2px; padding-bottom: 2px; margin-top: 0px; }
@@ -176,7 +178,6 @@ div.ExpandPlusMinus { margin-top: 0px !important; }
 div.socialListTab { margin-top: 0px; }
 div.SteamPlayerGroupLines { display: none !important; }
 div.SteamPlayerGroupFooter { display: none !important; }
-div.friend div.labelHolder div.statusAndName span.playerNickname { font-size: 11px; }
 
 /* Compact chat tabs */
 div.HorizontalMiniSlider { height: 29px !important; }
