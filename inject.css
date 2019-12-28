@@ -65,8 +65,9 @@ div.chatEntry.compactView div.VoiceToggleIconCtn { left: 3px; top: 4px; height: 
 div.chatEntry.compactView div.VoiceToggleIconCtn > svg { width: 75% !important; height: 75% !important; }
 div.ChatMessageEntryVoice { min-width: 20px; margin-left: 12px; margin-right: 12px; }
 div.chatEntry.compactView button[class^="chatentry_chatSubmitButton"] { height: 20px; width: 20px; min-width: 20px; min-height: 20px; }
-div.chatEntry.compactView button[class^="chatentry_chatSubmitButton"] svg.SVGIcon_Emoticon { margin-top: 2px !important; width: 12px !important; height: 12px !important; }
-div.chatEntry.compactView button[class^="chatentry_chatSubmitButton"] svg.SVGIcon_Paperclip { width: 16px !important; height: 16px !important; margin-bottom: 14px !important; margin-top: 0px !important; }
+div.chatEntry.compactView button[class^="chatentry_chatSubmitButton"] svg.SVGIcon_Submit { margin-top: 2px !important; width: 14px !important; height: 14px !important; }
+div.chatEntry.compactView button[class^="chatentry_chatSubmitButton"] svg.SVGIcon_Emoticon { margin-top: 0px !important; width: 12px !important; height: 12px !important; }
+div.chatEntry.compactView button[class^="chatentry_chatSubmitButton"] svg.SVGIcon_Paperclip { width: 16px !important; height: 16px !important; }
 div.chatEntry.compactView div[class^="chatentry_chatEntryActionsContainer"] { margin: 0px !important; }
 svg[class^="shared_svg_library_EmoticonBow"] { top: -6px !important; }
 
