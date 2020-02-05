@@ -102,8 +102,9 @@ span.mention { line-height: 14px !important; }
 div.ChatMessageBlockDelete { top: 0px; left: -16px; }
 
 /* Compact group chat user list */
-div.friendGroup div.groupName { font-size: 12px !important; line-height: 16px; margin-top: 6px; }
-div.CompactFriendsList div.friend, div.CompactFriendsList div.friendGroup div.friend { padding: 2px 0px 0px 6px !important; }
+div.friendGroup div.groupName { font-size: 12px !important; line-height: 16px; margin-top: 6px; position: unset !important; height: unset !important; }
+div.chatroomBucket_regular { position: unset !important; height: unset !important; }
+div.CompactFriendsList div.friend, div.CompactFriendsList div.friendGroup div.friend { padding: 2px 0px 0px 6px !important; margin: 0px !important; }
 div.CompactFriendsList div.friend div.playerName { font-size: 11px; margin: 0px !important; -webkit-mask: unset !important; padding-right: 0px; }
 div.CompactFriendsList div.friend div.labelHolder { margin-top: 0px !important; }
 div.CompactFriendsList div.friend div.richPresenceLabel { margin-top: 1px !important; font-size: 10px !important; }
@@ -114,8 +115,9 @@ div.MemberListOption { height: 16px; }
 div.MemberListOptionsContainer form.socialInputContainer { margin: 4px; }
 div.MemberListOption > svg { padding: 0px !important; }
 div.MemberListColumn div.friend div.chatMemberFriendIcon { display: none !important; }
-div[class^="personanameandstatus_playerName"] { font-size: 11px !important; }
-div[class^="personanameandstatus_gameName"] { font-size: 10px !important; }
+div[class^="personanameandstatus_playerName"] { font-size: 11px !important; margin-bottom: 0px !important; }
+div[class^="personanameandstatus_gameName"] { font-size: 10px !important; margin-top: -1px !important; }
+div[class^="personanameandstatus_richPresenceContainer"] { margin-top: 3px !important; margin-bottom: 0px !important; }
 div[class^="personanameandstatus_richPresenceLabel"] { display: none !important; }
 span[class^="personanameandstatus_playerNickname"] { font-size: 11px !important; }
 
@@ -161,6 +163,7 @@ canvas+img { height: 32px !important; }
 div[style*="150px;"] { height: 32px !important; }
 div[class^="bbcode_RoomEffectContainer"] { margin: 0px !important; padding: 8px !important; }
 button.DialogButton.Primary { margin: 0px !important; padding: 0px 4px !important; left: 7px !important; font-size: 13px !important; line-height: 30px !important; }
+div.TradeOfferInvite div.leftInviteContainer { width: 40px !important; height: 46px !important; }
 
 /* Compact friends list */
 div.compactView div.titleBarContainer div.currentUserContainer div.richPresenceLabel { line-height: 14px; padding-top: 2px; padding-bottom: 2px; margin-top: 0px; }
