@@ -95,6 +95,7 @@ div.smallChatFont div.speakerTimeStamp { line-height: 12px; font-size: 11px; }
 div.smallChatFont div.ChatRoomSpeaker div.speaker { margin-top: 0px; padding: 1.5px 0; /*flex-direction: row-reverse; */}
 div.smallChatFont div.ChatRoomSpeaker div.speaker div.speakerName { margin-top: 2px; }
 div.smallChatFont div.ChatRoomSpeaker { margin-top: 0px; }
+div.ChatRoomSpeaker div.speaker div.speakerAvatar { height: 0px !important; width: 0px !important; }
 div.chatImageContainer, div.chatVideoContainer { margin-bottom: 0px; }
 div.smallChatFont div.msg { padding: 0px; line-height: 15px; }
 div.smallChatFont div.msg.timeDivision { margin-top: 0px; margin-bottom: 0px; height: 14px; }
