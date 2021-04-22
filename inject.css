@@ -163,9 +163,11 @@ div.ChatMessageErrorSending div.msgText { padding: 0px !important; }
 canvas { height: 32px !important; }
 canvas+img { height: 32px !important; }
 div[style*="150px;"] { height: 32px !important; }
+div[style*="150px;"] > img { height: 32px; }
 div[class^="bbcode_RoomEffectContainer"] { margin: 0px !important; padding: 8px !important; }
 button.DialogButton.Primary { margin: 0px !important; padding: 0px 4px !important; left: 7px !important; font-size: 13px !important; line-height: 30px !important; }
 div.TradeOfferInvite div.leftInviteContainer { width: 40px !important; height: 46px !important; }
+div[class^="reactions_MessageReaction"] { margin-top: 0px; margin-bottom: 0px; padding: 0px; }
 
 /* Compact friends list */
 div.compactView div.titleBarContainer div.currentUserContainer div.richPresenceLabel { line-height: 14px; padding-top: 2px; padding-bottom: 2px; margin-top: 0px; }
